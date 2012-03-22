@@ -20,10 +20,13 @@ class redirectTestActions extends sfActions
     {
       $this->redirect($request['redirectUrl']);
     }
+
+    return sfView::SUCCESS;
   }
 
   public function executeUrl(sfWebRequest $request)
   {
   
+    return sfView::SUCCESS;
   }
 }
